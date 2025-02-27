@@ -13,7 +13,7 @@ var exphbs = require('express-handlebars');     // Import express-handlebars
 app.engine('.hbs', engine({extname: ".hbs"}));  // Create an instance of the handlebars engine to process templates
 app.set('view engine', '.hbs');                 // Tell express to use the handlebars engine whenever it encounters a *.hbs file.
 
-CONST PORT = process.env.PORT || 19922;              // Set a port number at the top so it's easy to change in the future
+const PORT = process.env.PORT || 19922;              // Set a port number at the top so it's easy to change in the future
 
 /*
     ROUTES

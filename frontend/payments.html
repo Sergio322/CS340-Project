@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+</head>
+<body>
+    <h1>Payments</h1>
+  <p><a href="index.html">Home</a></p>
+  
+  <h2>All Payments</h2>
+  <table border="1">
+    <tr>
+      <th>Payment ID</th>
+        <th>Billing ID</th>
+        <th>Payment Date</th>
+        <th>Amount Paid</th>
+        <th>Payment Method</th>
+        <th>Confirmation Number</th>
+        <th>Actions</th>
+    </tr>
+    <tr>
+      <td>501</td>
+      <td>100</td>
+      <td>2023-01-05</td>
+      <td>69.98</td>
+      <td>Credit Card</td>
+      <td>CONF001</td>
+      <td>
+        <button>Edit</button>
+        <button>Delete</button>
+    </td>
+    </tr>
+  </table>
+  
+  <h2>Add a New Payment</h2>
+  <p><em>Note: billingID may be NULL if this is a prepayment.</em></p>
+  <form>
+    <label>Billing ID (optional):<br>
+      <input type="number" name="billingID">
+    </label><br><br>
+    
+    <label>Payment Date:<br>
+      <input type="date" name="paymentDate" required>
+    </label><br><br>
+    
+    <label>Amount Paid:<br>
+      <input type="number" step="0.01" name="amountPaid" required>
+    </label><br><br>
+    
+    <label>Payment Method:<br>
+      <select name="paymentMethod" required>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+        <option value="Cash">Cash</option>
+        <option value="Check">Check</option>
+      </select>
+    </label><br><br>
+    
+    <label>Confirmation Number:<br>
+      <input type="text" name="confirmationNumber" required>
+    </label><br><br>
+    
+    <button type="submit">Add Payment</button>
+  </form>
+</body>
+</html>

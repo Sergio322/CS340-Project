@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+</head>
+<body>
+    <h1>Customers</h1>
+  <p><a href="index.html">Home</a></p>
+  
+  <!-- Simple placeholder for "All Customers" listing -->
+  <h2>All Customers</h2>
+  <table border="1">
+    <tr>
+      <th>Customer ID</th>
+      <th>Account Number</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Address</th>
+      <th>JoinDate</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>ACCT001</td>
+      <td>Alice Johnson</td>
+      <td>alice.j@example.com</td>
+      <td>555-1234</td>
+      <td>123 Elm St.</td>
+      <td>2020-01-15</td>
+      <td>
+        <button>Edit</button>
+        <button>Delete</button>
+    </td>
+    </tr>
+  </table>
+  
+  <h2>Add a New Customer</h2>
+  <form>
+    <label>Account Number:<br>
+      <input type="text" name="accountNumber" required>
+    </label><br><br>
+
+    <label>Name:<br>
+      <input type="text" name="name" required>
+    </label><br><br>
+
+    <label>Email:<br>
+      <input type="email" name="email" required>
+    </label><br><br>
+
+    <label>Phone:<br>
+      <input type="text" name="phone" required>
+    </label><br><br>
+
+    <label>Address:<br>
+      <input type="text" name="address" required>
+    </label><br><br>
+
+    <label>Join Date:<br>
+      <input type="date" name="joinDate" required>
+    </label><br><br>
+
+    <button type="submit">Add Customer</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriptions</title>
+</head>
+<body>
+    <h1>Subscriptions</h1>
+  <p><a href="index.html">Home</a></p>
+  
+  <h2>All Subscriptions</h2>
+  <table border="1">
+    <tr>
+      <th>Subscription ID</th>
+      <th>Customer ID</th>
+      <th>Service ID</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2020-01-15</td>
+      <td>(NULL)</td>
+      <td>
+        <button>Edit</button>
+        <button>Delete</button>
+    </td>
+    </tr>
+  </table>
+  
+  <h2>Add Subscription</h2>
+  <form>
+    <label>Customer ID:<br>
+      <input type="number" name="customerID" required>
+    </label><br><br>
+    
+    <label>Service ID:<br>
+      <input type="number" name="serviceID" required>
+    </label><br><br>
+    
+    <label>Start Date:<br>
+      <input type="date" name="startDate" required>
+    </label><br><br>
+    
+    <label>End Date (optional):<br>
+      <input type="date" name="endDate">
+    </label><br><br>
+    
+    <button type="submit">Add Subscription</button>
+  </form>
+</body>
+</html>

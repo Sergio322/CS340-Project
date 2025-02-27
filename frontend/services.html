@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<body>
+    <h1>Services</h1>
+  <p><a href="index.html">Home</a></p>
+  
+  <h2>All Services</h2>
+  <table border="1">
+    <tr>
+      <th>Service ID</th>
+      <th>Service Name</th>
+      <th>Monthly Cost</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Internet</td>
+      <td>39.99</td>
+      <td>High-speed broadband internet (300mbps)</td>
+      <td>
+        <button>Edit</button>
+        <button>Delete</button>
+    </td>
+    </tr>
+  </table>
+  
+  <h2>Add a New Service</h2>
+  <form>
+    <label>Service Name:<br>
+      <input type="text" name="serviceName" required>
+    </label><br><br>
+    
+    <label>Monthly Cost:<br>
+      <input type="number" step="0.01" name="monthlyCost" required>
+    </label><br><br>
+    
+    <label>Description:<br>
+      <input type="text" name="description">
+    </label><br><br>
+    
+    <button type="submit">Add Service</button>
+  </form>
+</body>
+</html>

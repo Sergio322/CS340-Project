@@ -13,7 +13,10 @@ var exphbs = require('express-handlebars');     // Import express-handlebars
 app.engine('.hbs', engine({extname: ".hbs"}));  // Create an instance of the handlebars engine to process templates
 app.set('view engine', '.hbs');                 // Tell express to use the handlebars engine whenever it encounters a *.hbs file.
 
+app.use(express.urlencoded({ extended: true })); // Middleware to parse form data
+
 const PORT = process.env.PORT || 19922;              // Set a port number at the top so it's easy to change in the future
+
 
 /*
     ROUTES
@@ -33,8 +36,6 @@ app.get('/', function(req, res) {
         res.render('index', { subscriptions: results }); // Pass subscriptions to Handlebars template
     });
 });
-
-app.use(express.urlencoded({ extended: true })); // Middleware to parse form data
 
 app.post('/update-subscription', function(req, res) {
     let { subscriptionID, startDate, endDate } = req.body;
